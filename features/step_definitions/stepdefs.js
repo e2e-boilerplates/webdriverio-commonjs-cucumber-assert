@@ -11,6 +11,6 @@ When(/^I am on the sandbox page$/, () => {
 });
 
 Then(/^The page header should be "([^"]*)"$/, (expectedHeader) => {
-  const header = $("h1").getText();
+  const header = browser.$("h1").getText();
   assert.strictEqual(header, expectedHeader);
 });
